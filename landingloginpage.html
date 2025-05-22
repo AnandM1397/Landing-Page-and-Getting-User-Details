@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="landingloginpage.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo"><h2>LandingPage</h2></a>
+      <ul class="links">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a class="active" href="#courses">Courses</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <button class="login-btn" id="openPopup">Book a Demo</button>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="hero-container">
+      <div class="text-box">
+        <h1>Skills that drive you forward</h1>
+        <p>Technology and the world of work change fast — with us, you're faster.</p>
+        <button type="button">View Plans</button>
+      </div>
+      <div class="hero-image">
+        <img src="images/udemy background.jpg" alt="Training background" />
+      </div>
+    </div>
+  </section>
+
+<!--Another section with online and offine mode-->
+  <div class="background-lines"></div>
+
+<div class="container">
+  <h1>Modes We Train</h1>
+  <div class="cards">
+    <div class="card">
+      <div class="icon"><i class="fa-solid fa-person-chalkboard"></i></div>
+      <h2>Offline Classes</h2>
+      <p>Offline classes involve face-to-face interaction, structured schedules, hands-on learning.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+      <h2>Online Live Classes</h2>
+      <p>Online classes provide remote learning flexibility through digital platforms.</p>
+    </div>
+  </div>
+</div>
+
+
+<!--Hiring Section-->
+
+<div class="hiring-section">
+  <h2>Our Hiring Partners</h2>
+  <div class="company">
+    <div class="company-content">
+      <span>ExpressBees</span>
+      <span>Acuvate</span>
+      <span>Concentrix</span>
+      <span>Epsilon</span>
+      <span>HCL</span>
+      <span>LG Soft India</span>
+      <span>NTT Data</span>
+      <span>Sigma</span>
+      <!-- Repeat to make it continuous -->
+      <span>ExpressBees</span>
+      <span>Acuvate</span>
+      <span>Concentrix</span>
+      <span>Epsilon</span>
+      <span>HCL</span>
+      <span>LG Soft India</span>
+      <span>NTT Data</span>
+      <span>Sigma</span>
+    </div>
+  </div>
+</div>
+
+
+  <section class="courses" id="courses">
+    <div class="courses-container">
+      <h2 class="section-title">Our Courses</h2>
+      <div class="course-columns">
+        <div class="course-card">
+          <h3>Java Full Stack</h3>
+          <p>Master Java, Spring Boot, and frontend tech like HTML, CSS, JS, and React.</p>
+          <button>Learn More</button>
+        </div>
+        <div class="course-card">
+          <h3>Python Full Stack</h3>
+          <p>Learn Python, Django, REST APIs, and modern frontend development.</p>
+          <button>Learn More</button>
+        </div>
+        <div class="course-card">
+          <h3>MERN Full Stack</h3>
+          <p>Get hands-on with MongoDB, Express.js, React, and Node.js to build dynamic web apps.</p>
+          <button>Learn More</button>
+        </div>
+        <div class="course-card">
+          <h3>Data Analyst</h3>
+          <p>Gain skills in Excel, SQL, Python, and data visualization tools like Power BI and Tableau.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- POPUP FORM -->
+  <div class="popup" id="popupForm">
+    <div class="form-container">
+      <span class="close-btn" id="closePopup">&times;</span>
+      <h2>Registration Form</h2>
+      <form id="registrationForm" action="landingloginpage.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+        <p id="output"></p>
+      </form>
+    </div>
+  </div>
+
+<!--Footer Section-->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>LandingPage</h2>
+        <p>Empowering your tech journey with top-notch courses and mentorship.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 LandingPage. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="landingloginpage.js"></script>
+</body>
+</html>
